@@ -13,6 +13,7 @@
     --background-color: #FFFFFF;
     --second-background-color: #F5F4FA;
     --footer-hero-color: #2F303A;
+    --icon-gray: #AFB1B8;
 }
 
 body {
@@ -407,8 +408,33 @@ body {
     display: block;
     width: 170px;
     height: 92px;
-    background-color: #212121;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border: 1px solid var(--icon-gray);
+    border-radius: 4px;
 }
+
+
+.clients-list .clients:hover,
+.clients-list .clients:focus {
+    border: 1px solid var(--ascent-color);
+}
+
+
+.client-logo {
+    display: block;
+    width: 106px;
+    height: 60px;
+    margin: auto;
+
+    fill: var(--icon-gray);
+}
+
+.client-logo:hover,
+.client-logo:focus {
+    fill: var(--ascent-color);
+}
+
 
 
 .footer {
