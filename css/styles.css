@@ -188,8 +188,21 @@ body {
 .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-
     background-color: var(--footer-hero-color);
+
+    max-width: 1600px;
+    min-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-image:
+        linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url("../images/hero-img.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 /* Герой-заголовок */
@@ -239,6 +252,7 @@ body {
 .hero-button:hover,
 .hero-button:focus {
     background: #188CE8;
+    cursor: pointer;
 }
 
 
@@ -304,6 +318,35 @@ body {
     line-height: 1.7;
 }
 
+.feature::before {
+    display: block;
+    content: "";
+    border-radius: 4px;
+    height: 120px;
+    margin-bottom: 30px;
+
+    background-color: var(--second-background-color);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.feature:nth-child(1)::before {
+    background-image: url(../images/antenna_1.svg);
+}
+
+.feature:nth-child(2)::before {
+    background-image: url(../images/clock_1.svg);
+}
+
+.feature:nth-child(3)::before {
+    background-image: url(../images/diagram_1.svg);
+}
+
+.feature:nth-child(4)::before {
+    background-image: url(../images/astronaut_1.svg);
+}
+
+
 .img-list {
     display: flex;
     justify-content: space-between;
@@ -353,6 +396,20 @@ body {
     line-height: 1.2;
     text-align: center;
 }
+
+/* Список клиентов */
+.clients-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clients-list .clients {
+    display: block;
+    width: 170px;
+    height: 92px;
+    background-color: #212121;
+}
+
 
 .footer {
     padding-top: 60px;
