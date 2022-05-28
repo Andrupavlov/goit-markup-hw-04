@@ -125,7 +125,18 @@ body {
 /* контакты */
 
 /* Почта, телефон */
-.contacts {
+
+.contacts-header .contacts-logo {
+    width: 16px;
+    height: 80px;
+}
+
+.contacts-header .item {
+    display: flex;
+}
+
+.contacts-header {
+    display: block;
     color: var(--primary-text-color);
 
     font-style: normal;
@@ -137,9 +148,10 @@ body {
     text-decoration: none;
 }
 
+
 /* Почта, телефон - при наведении */
-.contacts:hover,
-.contacts:focus {
+.contacts-header:hover,
+.contacts-header:focus {
     color: var(--ascent-color);
 
     font-style: normal;
@@ -150,6 +162,7 @@ body {
 
     text-decoration: none;
 }
+
 
 .main-container {
     display: flex;
@@ -185,7 +198,8 @@ body {
     padding-bottom: 25px;
 }
 
-/* герой */
+
+/* ----------------------------- герой ---------------------------------- */
 .hero {
     padding-top: 200px;
     padding-bottom: 200px;
@@ -319,32 +333,17 @@ body {
     line-height: 1.7;
 }
 
-.feature::before {
+.feature .feature-pic {
     display: block;
-    content: "";
     border-radius: 4px;
+
+    width: 270px;
     height: 120px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     margin-bottom: 30px;
 
     background-color: var(--second-background-color);
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.feature:nth-child(1)::before {
-    background-image: url(../images/antenna_1.svg);
-}
-
-.feature:nth-child(2)::before {
-    background-image: url(../images/clock_1.svg);
-}
-
-.feature:nth-child(3)::before {
-    background-image: url(../images/diagram_1.svg);
-}
-
-.feature:nth-child(4)::before {
-    background-image: url(../images/astronaut_1.svg);
 }
 
 
@@ -358,7 +357,7 @@ body {
     justify-content: space-between;
 }
 
-/* Секуия с сотрудниками */
+/* Секцуия с сотрудниками */
 .ouer-teem-section {
     background-color: var(--second-background-color);
 }
@@ -413,7 +412,7 @@ body {
     padding-bottom: 16px;
     padding-right: 32px;
     padding-left: 32px;
-    
+
     border-radius: 4px;
     border: 1px solid var(--icon-gray);
     fill: var(--icon-gray);
@@ -460,9 +459,78 @@ body {
     display: block;
 }
 
+.footer-container {
+    display: flex;
+    align-items: baseline
+}
+
 .contacts-email {
     margin-top: 0;
     margin-bottom: 9px;
+}
+
+.contacts {
+    color: var(--primary-text-color);
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+
+    text-decoration: none;
+}
+
+/* Почта, телефон - при наведении */
+.contacts:hover,
+.contacts:focus {
+    color: var(--ascent-color);
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+
+    text-decoration: none;
+}
+
+.social-network {
+    margin-left: 70px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    text-transform: uppercase;
+
+    color: var(--white-text);
+}
+
+.social-network-list {
+    display: flex;
+    width: 206px;
+    justify-content: space-between
+}
+
+.footer-social-logo {
+    display: block;
+    width: 44px;
+    height: 44px;
+
+    padding: 12px;
+
+    fill: var(--white-text)
+}
+
+.social-network-list .footer-icon {
+    display: block;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.footer-icon:hover,
+.footer-icon:focus {
+    background: var(--ascent-color)
 }
 
 

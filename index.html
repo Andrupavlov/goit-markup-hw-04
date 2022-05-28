@@ -46,11 +46,17 @@
 
         <ul class="list contacts-header">
           <li class="item">
+            <svg class="contacts-logo">
+              <use href="./images/symbol-defs.svg#icon-email"></use>
+            </svg>
             <a href="mailto:info@devstudio.com" target="_blank" class="contacts"
               >info@devstudio.com</a
             >
           </li>
           <li class="item">
+            <svg class="contacts-logo">
+              <use href="./images/symbol-defs.svg#icon-phone"></use>
+            </svg>
             <a href="tel:+380961111111" class="contacts">+38 096 111 11 11</a>
           </li>
         </ul>
@@ -69,6 +75,9 @@
           <h2 hidden>Наши преимущества</h2>
           <ul class="feature-list list">
             <li class="feature">
+              <svg class="feature-pic">
+                <use href="./images/symbol-defs.svg#icon-pic-antenna"></use>
+              </svg>
               <h3 class="title">Внимание к деталям</h3>
               <p class="paragraph">
                 Идейные соображения, а также начало повседневной работы по
@@ -76,6 +85,9 @@
               </p>
             </li>
             <li class="feature">
+              <svg class="feature-pic">
+                <use href="./images/symbol-defs.svg#icon-pic-clock"></use>
+              </svg>
               <h3 class="title">Пунктуальность</h3>
               <p class="paragraph">
                 Задача организации, в особенности же рамки и место обучения
@@ -83,6 +95,9 @@
               </p>
             </li>
             <li class="feature">
+              <svg class="feature-pic">
+                <use href="./images/symbol-defs.svg#icon-pic-diagram"></use>
+              </svg>
               <h3 class="title">Планирование</h3>
               <p class="paragraph">
                 Равным образом консультация с широким активом в значительной
@@ -90,6 +105,9 @@
               </p>
             </li>
             <li class="feature">
+              <svg class="feature-pic">
+                <use href="./images/symbol-defs.svg#icon-pic-astronaut"></use>
+              </svg>
               <h3 class="title">Современные технологии</h3>
               <p class="paragraph">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -246,29 +264,67 @@
     </main>
 
     <footer class="footer">
-      <div class="container">
-        <a href="./index.html" class="logo">
-          <span class="logo-1part">Web</span>
-          <span class="logo-2part">Studio</span>
-        </a>
-        <address>
-          <ul class="list">
+      <div class="container footer-container">
+        <div class="all-contacts">
+          <a href="./index.html" class="logo">
+            <span class="logo-1part">Web</span>
+            <span class="logo-2part">Studio</span>
+          </a>
+          <address>
+            <ul class="list">
+              <li>
+                <p class="geo-address">г. Киев, пр-т Леси Украинки, 26</p>
+              </li>
+              <li>
+                <a
+                  href="mailto:info@devstudio.com"
+                  target="_blank"
+                  class="contacts contacts-email"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+380961111111" class="contacts"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="social-network">
+          <h4>присоединяйтесь</h4>
+          <ul class="list social-network-list">
             <li>
-              <p class="geo-address">г. Киев, пр-т Леси Украинки, 26</p>
+              <a href="" class="footer-icon">
+                <svg class="footer-social-logo">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
             <li>
-              <a
-                href="mailto:info@devstudio.com"
-                target="_blank"
-                class="contacts contacts-email"
-                >info@devstudio.com</a
-              >
+              <a href="" class="footer-icon">
+                <svg class="footer-social-logo">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
             </li>
             <li>
-              <a href="tel:+380961111111" class="contacts">+38 096 111 11 11</a>
+              <a href="" class="footer-icon">
+                <svg class="footer-social-logo">
+                  <use href="./images/symbol-defs.svg#icon-icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="footer-icon">
+                <svg class="footer-social-logo">
+                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>
