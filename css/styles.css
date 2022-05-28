@@ -76,7 +76,13 @@ body {
     line-height: 1.2;
 }
 
-/* Навигация по сайту */
+/* Отступ лоя лого */
+.all-logo {
+    margin-right: 93px;
+}
+
+
+/* Навигация по сайту --------------------------------------------------- */
 /* Навигация по сайту - при наведении */
 
 /* список меню */
@@ -122,16 +128,17 @@ body {
     color: var(--ascent-color);
 }
 
-/* контакты */
+/* Контакты ------------------------------------------------------------ */
 
 /* Почта, телефон */
-
 .contacts-header .contacts-logo {
+    display: block;
     width: 16px;
     height: 80px;
+    margin-right: 10px;
 }
 
-.contacts-header .item {
+.contacts-header .item a {
     display: flex;
 }
 
@@ -150,8 +157,8 @@ body {
 
 
 /* Почта, телефон - при наведении */
-.contacts-header:hover,
-.contacts-header:focus {
+.contacts-header .item .contacts:hover,
+.contacts-header .item .contacts:focus {
     color: var(--ascent-color);
 
     font-style: normal;
@@ -161,8 +168,9 @@ body {
     letter-spacing: 0.02em;
 
     text-decoration: none;
-}
 
+    fill: var(--ascent-color);
+}
 
 .main-container {
     display: flex;
@@ -173,19 +181,9 @@ body {
     display: flex;
 }
 
-.all-logo {
-    margin-right: 93px;
-}
-
 .contacts-header {
     display: flex;
     margin-left: auto;
-}
-
-.contacts-header .contacts {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
 }
 
 .contacts-header .item:not(:last-child) {
@@ -198,8 +196,15 @@ body {
     padding-bottom: 25px;
 }
 
+.contacts-header .header-email {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 
-/* ----------------------------- герой ---------------------------------- */
+}
+
+
+/* Герой --------------------------------------------------------------- */
 .hero {
     padding-top: 200px;
     padding-bottom: 200px;
@@ -346,6 +351,7 @@ body {
     background-color: var(--second-background-color);
 }
 
+/* Наша команда --------------------------------------------------------- */
 
 .img-list {
     display: flex;
@@ -390,13 +396,43 @@ body {
 /* должность сотрудника */
 .title-position {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 16px;
 
     font-size: 16px;
     line-height: 1.2;
     text-align: center;
 }
 
+/* Соцсети сотрудников ---------------------------------------------- */
+.employee-social {
+    display: flex;
+    margin-left: 32px;
+    justify-content: space-between;
+    width: 206px;
+}
+
+.employee-social .employee-icon {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    fill: var(--icon-gray);
+    border-radius: 50%;
+}
+
+.employee-icon .employee-social-logo {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 12px;
+}
+
+.employee-icon:hover,
+.employee-icon:focus {
+    fill: var(--white-text);
+    background-color: var(--ascent-color);
+}
+
+/* Клиенты -------------------------------------------------------------- */
 /* Список клиентов */
 .clients-list {
     display: flex;
@@ -534,7 +570,7 @@ body {
 }
 
 
-/*--------------------- Страница портфолио --------------------- */
+/*--------------------------- Страница портфолио ------------------------- */
 
 
 /* Кнопки фильтра */
@@ -649,4 +685,10 @@ body {
 
     font-size: 16px;
     line-height: 1.9;
+}
+
+.project-card:hover,
+.project-card:focus {
+    outline: 1px solid #EEEEEE;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
