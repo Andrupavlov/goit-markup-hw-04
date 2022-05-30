@@ -24,6 +24,17 @@ body {
     letter-spacing: 0.03em;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
 /* Удаление точек у спсиков */
 .list {
     padding: 0;
@@ -155,6 +166,9 @@ body {
     text-decoration: none;
 }
 
+.contacts-header .item .contacts {
+    fill: var(--primary-text-color);
+}
 
 /* Почта, телефон - при наведении */
 .contacts-header .item .contacts:hover,
@@ -327,7 +341,7 @@ body {
 }
 
 
-/* Описание преимуществ, каждого типа */
+/* Описание преимуществ, каждого типа --------------------------- */
 .feature-list .paragraph {
     width: 270px;
 
@@ -338,17 +352,25 @@ body {
     line-height: 1.7;
 }
 
-.feature .feature-pic {
-    display: block;
-    border-radius: 4px;
+.feature-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 
     width: 270px;
     height: 120px;
-    padding-top: 25px;
-    padding-bottom: 25px;
     margin-bottom: 30px;
 
     background-color: var(--second-background-color);
+}
+
+.feature .feature-pic {
+    display: block;
+
+
+    width: 70px;
+    height: 70px;
 }
 
 /* Наша команда --------------------------------------------------------- */
@@ -406,6 +428,7 @@ body {
 /* Соцсети сотрудников ---------------------------------------------- */
 .employee-social {
     display: flex;
+
     margin-left: 32px;
     justify-content: space-between;
     width: 206px;
@@ -413,6 +436,9 @@ body {
 
 .employee-social .employee-icon {
     display: flex;
+    justify-content: center;
+    align-items: center;
+
     width: 44px;
     height: 44px;
     fill: var(--icon-gray);
@@ -439,27 +465,29 @@ body {
     justify-content: space-between;
 }
 
-
-.client-logo {
-    display: block;
+.clients-list .clients {
+    display: flex;
     width: 170px;
     height: 92px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    padding-right: 32px;
-    padding-left: 32px;
+    justify-content: center;
+    align-items: center;
 
     border-radius: 4px;
     border: 1px solid var(--icon-gray);
     fill: var(--icon-gray);
 }
 
-.client-logo:hover,
-.client-logo:focus {
+.client-logo {
+    display: block;
+    width: 106px;
+    height: 60px;
+}
+
+.clients-list .clients:hover,
+.clients-list .clients:focus {
     border: 1px solid var(--ascent-color);
     fill: var(--ascent-color);
 }
-
 
 
 .footer {
@@ -529,6 +557,10 @@ body {
     letter-spacing: 0.02em;
 
     text-decoration: none;
+}
+
+.social-join {
+    margin-bottom: 20px;
 }
 
 .social-network {
@@ -637,6 +669,7 @@ body {
 
 /* Список карточек проектов */
 .project-card {
+    display: block;
     margin-right: 30px;
     margin-bottom: 30px;
 }
