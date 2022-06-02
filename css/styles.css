@@ -720,8 +720,13 @@ p {
     line-height: 1.9;
 }
 
-.project-card:hover,
-.project-card:focus {
+.project-card-link {
+    display: block;
+    text-decoration: none;
+}
+
+.project-card-link:hover,
+.project-card-link:focus {
     outline: 1px solid #EEEEEE;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
